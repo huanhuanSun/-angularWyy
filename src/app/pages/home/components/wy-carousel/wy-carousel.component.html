@@ -1,0 +1,13 @@
+<div class="carousel">
+    <div class="wrap">
+        <i nz-icon class="arrow left" nzType="left" nzTheme="outline" (click)="onChangeSLide('pre')"></i>
+        <ng-content></ng-content>
+        <!-- ngZorro已经将索引返回给我们 需要用 let-number保存 number为当前索引  -->
+        <ng-template #dot let-number>
+            <!-- [class.active]="activeIndex===number"  绑定active的class -->
+            <i class="dot" [class.active]="activeIndex===number"></i>
+        </ng-template>
+        <i nz-icon class="arrow right" nzType="right" nzTheme="outline" (click)="onChangeSLide('next')"></i>
+
+    </div>
+</div>
