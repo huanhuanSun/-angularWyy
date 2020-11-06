@@ -8,6 +8,7 @@ import { ServicesModule } from '../services/services.module';
 import { PagesModule } from '../pages/pages.module';
 import { ShareModule } from '../share/share.module';
 import {NZ_I18N, zh_CN} from 'ng-zorro-antd'
+import { AppStoreModule } from '../store';
 
 
 
@@ -22,6 +23,7 @@ import {NZ_I18N, zh_CN} from 'ng-zorro-antd'
     PagesModule,
     ShareModule,
     AppRoutingModule,
+    AppStoreModule
   ],
   exports:[
     ShareModule,

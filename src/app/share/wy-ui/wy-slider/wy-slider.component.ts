@@ -79,7 +79,7 @@ export class WySliderComponent implements OnInit,OnDestroy, ControlValueAccessor
 
   ngOnInit() {
     // console.log(this.el) // 这种拿到的是 HTMLDom 不用这种的
-    console.log(this.mySlider) 
+    // console.log(this.mySlider) 
     this.slideDom = this.mySlider.nativeElement;
     this.createDraggingObservables();
     this.subscribeDrag(['start'])
